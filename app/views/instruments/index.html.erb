@@ -1,0 +1,13 @@
+<div class="image-index">
+  <div class="wrapper">
+    <div class="header">
+      <%= image_tag("logo.jpg") %>
+      <p>Here is my current Instrument Collection.</p>
+    </div>
+    <div class="entry">
+      <figure> <%= image_tag("2003.jpg") %>
+        <figcaption><%= @guitars.first.maker.name %> <%= @guitars.first.model %></figcaption>
+      </figure>
+    </div>
+  </div>
+</div>
