@@ -59,7 +59,7 @@ a:hover {
     border: solid;
 }
 
-.image-index {
+body {
     color: #665544;
     background-color: #d4d0c6;
     font-family: Georgia, "Times New Roman", serif;
@@ -67,7 +67,7 @@ a:hover {
 }
 
 .wrapper {
-    width: 720px;
+    width: 900px;
     margin: 0px auto;
 }
 
@@ -80,7 +80,8 @@ a:hover {
     float: left;
     margin: 10px;
     height: 198px;
-    bacground-position: bottom;
+    background-position: bottom;
+    padding: 30px;
 }
 
 figure {
@@ -89,7 +90,7 @@ figure {
     height: 170px;
     background-color: #e7e3d8;
     margin: 0px;
-    padding: 9px;
+    padding: 30px 40px 40px 40px;
     text-align: left;
 }
 

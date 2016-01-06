@@ -1,13 +1,16 @@
 <div class="image-index">
   <div class="wrapper">
+    <a href="/" class="on">Home</a>
     <div class="header">
       <%= image_tag("logo.jpg") %>
       <p>Here is my current Instrument Collection.</p>
     </div>
-    <div class="entry">
-      <figure> <%= image_tag("2003.jpg") %>
-        <figcaption><%= @guitars.first.maker.name %> <%= @guitars.first.model %></figcaption>
-      </figure>
-    </div>
+    <% @guitars.each do |guitar| %>
+        <div class="entry">
+          <figure> <%= image_tag(guitar.image_url) %>
+            <figcaption><%= guitar.maker.name %> <%= guitar.model %></figcaption>
+          </figure>
+        </div>
+    <% end %>
   </div>
 </div>
